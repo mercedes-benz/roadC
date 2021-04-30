@@ -20,7 +20,7 @@ For communication please respect our [FOSS Code of Conduct](https://github.com/D
 
 The following communication channels exist for this project:
 
-- Github for reporting and claiming issues: [GitHub Issues](https://github.com/Daimler/roadC)
+- Github for reporting and claiming issues: [GitHub Issues](https://github.com/Daimler/roadC/issues)
 
 Transparent and open communication is important to us.
 Thus, all project-related communication should happen only through these channels and in English.
