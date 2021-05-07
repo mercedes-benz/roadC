@@ -11,6 +11,10 @@ The core functionality of roadC is closely related the shortest common superstri
 
 The roadC library is a reference implementation of the roadC algorithm. It is implemented in C and can be compiled using a C or C++ compiler.
 
+## Short Desciption
+
+Implementation of an optimized greedy approximation algorithm for the shortest common superstring problem (SCS). Additionally data alignment and data structure padding are supported. Data alignment restricts the start address of a data array. Typically the address is some multiple of the computer's word size to improve the system's performance. Data structure padding in handled on the finest granularity possible, on bit level.
+
 ## Quickstart Guide
 
 1. Get the roadC library and type
