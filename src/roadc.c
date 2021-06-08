@@ -750,6 +750,10 @@ void roadcAddElement(tRoadcPtr pRoadc,
     /* empty array */
     return;
   }
+  if(alignment==0){
+    /* wrong value for alignment */
+    return;
+  }
   if((pRoadc==(tRoadcPtr)NULL) ||
      (pData==(tRoadcBytePtr)NULL)){
     return;
@@ -764,10 +768,6 @@ void roadcAddElement(tRoadcPtr pRoadc,
   }
   pRoadc->roadcCurrentInputSize=pRoadc->roadcCurrentInputSize+size;
 
-  if(alignment==0){
-    /* wrong value for alignment */
-    return;
-  }
   pTmp =  roadcNewRoadcDataEntry(pData, size, pPaddingByteMask, alignment);
   /* alloc failed? */
   ROADC_ALLOC_FAILED_WITHOUT_RETURN_VALUE(pTmp);
@@ -1212,7 +1212,7 @@ tRoadcByte roadcGreedyStep(tRoadcPtr pRoadc){
         /* done for the current overlap size */
         return 0;
       } else {
-        if((*(*pRoadc->pRoadcGreedyCurrentDataEntryLarger).pNext).size>pRoadc->roadcGreedyCurrentOverlapSize){ 
+        if((*(*(*pRoadc->pRoadcGreedyCurrentDataEntryLarger).pNext).pNext).size>pRoadc->roadcGreedyCurrentOverlapSize){ 
           roadcSetGreedyVariables(pRoadc, 
                                   (*pRoadc->pRoadcGreedyCurrentDataEntryLarger).pNext,
                                   (*(*pRoadc->pRoadcGreedyCurrentDataEntryLarger).pNext).pNext,
