@@ -51,8 +51,6 @@ This project is licensed under the [MIT LICENSE](LICENSE.md).
 
 ## Provider Information
 
-Please visit <https://github.com/Daimler/daimler-foss/blob/master/LEGAL_IMPRINT.md> for information on the provider.
+Please visit https://mbition.io/en/home/index.html for information on the provider.
 
-Notice: Before you use the program in productive use, please take all necessary precautions,
-e.g. testing and verifying the program with regard to your specific use.
-The program was tested solely for our own use cases, which might differ from yours.
+Notice: Before you use the program in productive use, please take all necessary precautions, e.g. testing and verifying the program with regard to your specific use. The program was tested solely for our own use cases, which might differ from yours.
